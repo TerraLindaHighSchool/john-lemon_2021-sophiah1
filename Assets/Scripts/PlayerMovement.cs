@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private Vector3 moveDirection;
     private Quaternion rotation;
-    private bool isWalking;
+    private bool IsWalking;
 
     [SerializeField] private float turnSpeed = 20f;
 
@@ -18,34 +18,29 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         rotation = Quaternion.identity;
+
     }
 
-    private void FixedUpdate()
+    // Update is called once per frame
+    void FixedUpdate()
     {
-        // get user input
+        // Get user input
         float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Verticle");
-
-
-
-        //user user input to set direction player will move
+        float vertical = Input.GetAxis("Vertical");
+        // Use user input to set direction player will move
         moveDirection.Set(horizontal, 0f, vertical);
         moveDirection.Normalize();
-        //set animator to walking or ide depending on user input
-        isWalking = !(Mathf.Approximately(horizontal, 0f) && Mathf.Approximately(vertical, 0f));
-        animator.SetBool("isWalking", isWalking);
-        //assign rotation towards move direction
-        Vector3 desiredDirection = Vector3.RotateTowards(transform.forward, moveDirection,
-                turnSpeed * Time.deltaTime, 0f);
+        // Set animator to walking or idle depending on user input
+        IsWalking = !(Mathf.Approximately(horizontal, 0f) && Mathf.Approximately(vertical, 0f));
+        animator.SetBool("IsWalking", IsWalking);
+        // Assign rotation towards move direction
+        Vector3 desiredDirection = Vector3.RotateTowards(transform.forward, moveDirection, turnSpeed * Time.deltaTime, 0f);
         rotation = Quaternion.LookRotation(desiredDirection);
     }
-
-
     // Animator event
     private void OnAnimatorMove()
     {
         rb.MovePosition(rb.position + moveDirection * animator.deltaPosition.magnitude);
         rb.MoveRotation(rotation);
     }
-
 }
