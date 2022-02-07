@@ -27,7 +27,7 @@ public class GameEnding : MonoBehaviour
     {
         m_IsPlayerCaught = true;
     }
-
+    
     void Update()
     {
         if (m_IsPlayerAtExit)
