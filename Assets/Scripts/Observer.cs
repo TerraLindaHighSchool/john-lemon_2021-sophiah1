@@ -14,6 +14,7 @@ public class Observer : MonoBehaviour
         if (other.transform == player)
         {
             m_IsPlayerInRange = true;
+            Debug.Log(m_IsPlayerInRange);
         }
     }
 
@@ -29,6 +30,7 @@ public class Observer : MonoBehaviour
     {
         if (m_IsPlayerInRange)
         {
+            Debug.Log("In Range");
             Vector3 direction = player.position - transform.position + Vector3.up;
             Ray ray = new Ray(transform.position, direction);
             RaycastHit raycastHit;
@@ -37,6 +39,7 @@ public class Observer : MonoBehaviour
             {
                 if (raycastHit.collider.transform == player)
                 {
+                    Debug.Log("Ray hit");
                     gameEnding.CaughtPlayer();
                 }
             }
