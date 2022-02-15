@@ -522,10 +522,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
+  m_Radius: 0.1690886
   m_Height: 1.2
   m_Direction: 1
-  m_Center: {x: 0, y: 0.6, z: 0}
+  m_Center: {x: 0, y: 0.6, z: -0.0809114}
 --- !u!1 &179029875
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +550,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179029875}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4490433, y: -0.59965897, z: 5.546191}
+  m_LocalPosition: {x: -2.15, y: -0.59965897, z: -5.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 609979670}
@@ -753,7 +753,6 @@ GameObject:
   m_Component:
   - component: {fileID: 518615830}
   - component: {fileID: 518615829}
-  - component: {fileID: 518615828}
   m_Layer: 5
   m_Name: FaderCanvas
   m_TagString: Untagged
@@ -761,18 +760,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!225 &518615828
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518615827}
-  m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!223 &518615829
 Canvas:
   m_ObjectHideFlags: 0
@@ -959,6 +946,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Height
+      value: 2.0717762
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.37703884
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.3813573
       objectReference: {fileID: 0}
     - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
         type: 3}
@@ -1380,6 +1382,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.6357205
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.371427
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.024231374
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.310171
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.34606922
+      objectReference: {fileID: 0}
     - target: {fileID: 8587765122782888123, guid: a98efd5db94238d4d982550df442f7df,
         type: 3}
       propertyPath: m_Name
@@ -1478,6 +1505,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.624011
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.40073454
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.086884975
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.38821077
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.4748243
       objectReference: {fileID: 0}
     - target: {fileID: 8587765122782888123, guid: a98efd5db94238d4d982550df442f7df,
         type: 3}
@@ -5060,7 +5112,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535718747}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -5532,6 +5584,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.4000205
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.32580137
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.04051757
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.20418245
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676248414165163071, guid: a98efd5db94238d4d982550df442f7df,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.37617636
       objectReference: {fileID: 0}
     - target: {fileID: 8587765122782888123, guid: a98efd5db94238d4d982550df442f7df,
         type: 3}
@@ -6318,10 +6395,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
-  m_Height: 1.2
+  m_Radius: 0.23989272
+  m_Height: 1.1039958
   m_Direction: 1
-  m_Center: {x: 0, y: 0.6, z: 0}
+  m_Center: {x: -0.010107279, y: 0.64800215, z: 0}
 --- !u!54 &7744830741769972843
 Rigidbody:
   m_ObjectHideFlags: 0
